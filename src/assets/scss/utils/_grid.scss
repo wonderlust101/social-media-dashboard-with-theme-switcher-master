@@ -6,6 +6,6 @@
   width: 100%;
   
   @include a.breakpoint(large) {
-    grid-template-columns: 1fr min(100% - 4rem * 2, 80rem) 1fr;
+    grid-template-columns: 1fr min(100% - 6rem * 2, 80rem) 1fr;
   }
 }

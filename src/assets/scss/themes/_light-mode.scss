@@ -1,6 +1,10 @@
 .light {
   background-color: #FFFFFF;
-
+  
+  &:before {
+    background-color: #F7F9FF;
+  }
+  
   h1 {
     color: #1D1F29;
   }
@@ -17,14 +21,14 @@
     &__sub-header {
       color: #63687D;
     }
-    
+
     &__switch-label {
       color: #848BAB;
     }
 
     &__switch {
       background-color: #AEB3CB;
-      
+
       &:hover {
         background: linear-gradient(225deg, #40DB82 0%, #388FE7 100%);
       }
@@ -37,7 +41,7 @@
 
   .main-stat-box {
     background-color: #F1F3FA;
-    
+
     &:hover {
       background-color: #E1E4F0;
     }
@@ -53,7 +57,7 @@
     &--instagram {
       border-top: 3px solid transparent;
       background: linear-gradient(to right, #F1F3FA, #F1F3FA),
-                  linear-gradient(to right, #DF4896, #EE877E, #FDC366);
+      linear-gradient(to right, #DF4896, #EE877E, #FDC366);
       background-clip: padding-box, border-box;
       background-origin: padding-box, border-box;
 

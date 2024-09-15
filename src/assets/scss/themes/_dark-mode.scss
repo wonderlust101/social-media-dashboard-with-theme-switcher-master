@@ -1,18 +1,22 @@
 .dark {
   background-color: #1D1F29;
 
+  &:before {
+    background-color: #20222F;
+  }
+
   h1 {
     color: #FFFFFF;
   }
-  
+
   h2 {
     color: #FFFFFF;
   }
-  
+
   h3 {
     color: #8C98C6;
   }
-  
+
   p {
     color: #FFFFFF;
   }

@@ -1,3 +1,5 @@
+import '../../utils/helper.tsx';
+
 import FacebookIcon from '/src/assets/images/icon-facebook.svg';
 import TwitterIcon from '/src/assets/images/icon-twitter.svg';
 import InstagramIcon from '/src/assets/images/icon-instagram.svg';
@@ -5,6 +7,7 @@ import YoutubeIcon from '/src/assets/images/icon-youtube.svg';
 
 import IncreaseIcon from '/src/assets/images/icon-up.svg';
 import DecreaseIcon from '/src/assets/images/icon-down.svg';
+import {formatNumber} from "../../utils/helper.tsx";
 
 type MainStatBoxProps = {
     social: string;
@@ -30,7 +33,7 @@ export default function MainStatBox({social, handle, followers, rate}: MainStatB
             </div>
 
             <div className='main-stat-box__follow'>
-                <p className='main-stat-box__follow-count'>{followers}</p>
+                <p className='main-stat-box__follow-count'>{formatNumber(followers)}</p>
                 <p className='main-stat-box__follow-text'>{social === 'youtube' ? 'Followers' : 'Subscribers'}</p>
             </div>
             
@@ -41,4 +44,3 @@ export default function MainStatBox({social, handle, followers, rate}: MainStatB
         </section>
     )
 }
-
