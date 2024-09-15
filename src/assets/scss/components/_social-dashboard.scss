@@ -1,0 +1,22 @@
+.social-dashboard {
+  grid-area: 1/2;
+  display: grid;
+  gap: 3rem;
+  
+  &__stat-row {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+  }
+  
+  &__sub-stats {
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  &__sub-stats-header {
+    font-size: 1.5rem;
+  }
+}

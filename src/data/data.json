@@ -1,0 +1,58 @@
+[
+  {
+    "socialMedia": "facebook",
+    "stats" : {
+      "handle" : "nathanf",
+      "followers": 1987,
+      "newFollowers": 12,
+      "views": 87,
+      "viewsIncRate": 87,
+      "likes": 52,
+      "likeIncRate": -2,
+      "retweet": null,
+      "retweetIncRate": null
+    }
+  },
+  {
+    "socialMedia": "twitter",
+    "stats" : {
+      "handle" : "nathanf",
+      "followers": 1044,
+      "newFollowers": 99,
+      "views": null,
+      "viewsIncRate": null,
+      "likes": 507,
+      "likeIncRate": 553,
+      "retweet": 117,
+      "retweetIncRate": 303
+    }
+  },
+  {
+    "socialMedia": "instagram",
+    "stats" : {
+      "handle" : "nathanf",
+      "followers": 11000,
+      "newFollowers": 1099,
+      "views": 52000,
+      "viewsIncRate": 1375,
+      "likes": 5462,
+      "likeIncRate": 2257,
+      "retweet": null,
+      "retweetIncRate": null
+    }
+  },
+  {
+    "socialMedia": "youtube",
+    "stats" : {
+      "handle" : "Nathan F.",
+      "followers": 8239,
+      "newFollowers": -144,
+      "views": 1407,
+      "viewsIncRate": -12,
+      "likes": 107,
+      "likeIncRate": -19,
+      "retweet": null,
+      "retweetIncRate": null
+    }
+  }
+]

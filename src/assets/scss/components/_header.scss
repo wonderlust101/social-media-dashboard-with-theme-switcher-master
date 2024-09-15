@@ -1,0 +1,84 @@
+@use '../abstract' as a;
+
+.header {
+  grid-area: 1/2;
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  margin-bottom: 2.75rem;
+
+  @include a.breakpoint(medium) {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+
+  &__text {
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  &__divider {
+    width: 100%;
+
+    @include a.breakpoint(medium) {
+      display: none;
+    }
+  }
+
+  &__switch-layout {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    justify-content: space-between;
+
+    @include a.breakpoint(medium) {
+      gap: 1rem;
+    }
+  }
+
+  &__switch-label {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  &__switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 1.5rem;
+  }
+
+  &__switch {
+    width: 3.25rem;
+    height: 100%;
+    border-radius: 50rem;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      height: 1.25rem;
+      width: 1.25rem;
+      border-radius: 50rem;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__switch-box {
+    display: none;
+  }
+
+  &__switch-box:checked + .header__switch {
+    background: linear-gradient(225deg, #40DB82 0%, #388FE7 100%);
+  }
+
+  &__switch-box:checked + .header__switch::before {
+    right: unset;
+    left: 5%;
+  }
+}

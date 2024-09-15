@@ -1,0 +1,17 @@
+@use '../abstract' as a;
+
+#root {
+  & > * {
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+  }
+}
+
+header {
+  padding-top: 2rem;
+}
+
+main {
+  padding-bottom: 5rem;
+}

@@ -1,0 +1,17 @@
+@use '../abstract' as a;
+@use '../themes' as t;
+
+h1, h2, h3, h4,
+h5, h6, p, label {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2, h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}

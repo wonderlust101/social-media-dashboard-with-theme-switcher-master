@@ -1,0 +1,41 @@
+.sub-stat-box {
+  display: grid;
+  justify-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1.7rem 1.5rem;
+  border-radius: 0.3rem;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-transform: capitalize;
+  }
+
+  &__value {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__rate {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+
+    &--positive {
+      & > * {
+        color: #1EB589 !important;
+      }
+    }
+
+    &--negative {
+      & > * {
+        color: #DC414C !important;
+      }
+    }
+  }
+}

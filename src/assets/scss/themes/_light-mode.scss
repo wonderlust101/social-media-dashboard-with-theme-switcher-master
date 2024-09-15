@@ -1,0 +1,77 @@
+.light {
+  background-color: #FFFFFF;
+
+  h1 {
+    color: #1D1F29;
+  }
+
+  h2 {
+    color: #63687D;
+  }
+
+  h3 {
+    color: #63687D;
+  }
+
+  .header {
+    &__sub-header {
+      color: #63687D;
+    }
+    
+    &__switch-label {
+      color: #848BAB;
+    }
+
+    &__switch {
+      background-color: #AEB3CB;
+      
+      &:hover {
+        background: linear-gradient(225deg, #40DB82 0%, #388FE7 100%);
+      }
+
+      &::before {
+        background-color: #F1F3FA;
+      }
+    }
+  }
+
+  .main-stat-box {
+    background-color: #F1F3FA;
+    
+    &:hover {
+      background-color: #E1E4F0;
+    }
+
+    &__user {
+      color: #63687D;
+    }
+
+    &__follow-text {
+      color: #63687D;
+    }
+
+    &--instagram {
+      border-top: 3px solid transparent;
+      background: linear-gradient(to right, #F1F3FA, #F1F3FA),
+                  linear-gradient(to right, #DF4896, #EE877E, #FDC366);
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+
+      &:hover {
+        border-top: 3px solid transparent;
+        background: linear-gradient(to right, #E1E4F0, #E1E4F0),
+        linear-gradient(to right, #DF4896, #EE877E, #FDC366);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+      }
+    }
+  }
+
+  .sub-stat-box {
+    background-color: #F1F3FA;
+
+    &:hover {
+      background-color: #E1E4F0;
+    }
+  }
+}
